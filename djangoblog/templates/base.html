@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+	{% block title %}
+	<title>Doug Nappiers Blog</title>	
+	{% endblock %}
+	<link rel="stylesheet" type="text/css" href='{% static "assets/css/default.css" %}' >
+</head>
+
+<body>
+	<div id="page">
+		<div id="sidebar"></div> <!-- need to build a sidebar soon -->
+		<div id="header">
+			{% block header %}
+			<h1>Blog Entries</h1>
+			{%endblock %}
+		</div>
+		<div id="main_content">
+			{% block main_content %}{% endblock %}
+		</div>
+		
+	
+	</div>
+</body>
