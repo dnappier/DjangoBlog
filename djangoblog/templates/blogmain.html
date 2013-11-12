@@ -8,7 +8,7 @@
 
 {% block main_content %}
 		{% if posts.count > 0 %}
-			{% for post in posts %}
+			{% for post in posts reversed %}
 			<div id="post_listings">
 				<div id=summary_post_title>
 					<h2 >

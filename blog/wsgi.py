@@ -13,6 +13,7 @@ middleware here, or combine a Django application with an application of another
 framework.
 
 """
+LOCAL = True
 import os
 
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
@@ -31,6 +32,10 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "blog.settings")
 # from helloworld.wsgi import HelloWorldApplication
 # application = HelloWorldApplication(application)
 from django.core.wsgi import get_wsgi_application
-from dj_static import Cling
 
-application = Cling(get_wsgi_application())
+if not LOCAL:
+    from dj_static import Cling
+
+    application = Cling(get_wsgi_application())
+else:
+    application = get_wsgi_application()
