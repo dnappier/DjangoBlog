@@ -4,17 +4,25 @@
 	{% block title %}
 	<title>Doug Nappiers Blog</title>	
 	{% endblock %}
-	<link rel="stylesheet" type="text/css" href='{% static "assets/css/default.css" %}' >
+	<link rel="stylesheet" type="text/css" href='{% static "css/default.css" %}' >
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src='{% static "javascript/script.js" %}'></script>
+	
 </head>
 
 <body>
 	<div id="page">
-		<div id="sidebar"></div> <!-- need to build a sidebar soon -->
+		<div id="sidebar">
+			<a id="button_home" href="/blog/all/">  
+				<img src='{% static "images/home.png" %}'>
+			</a> 
+		</div> <!-- need to build a sidebar soon -->
 		<div id="header">
 			{% block header %}
 			<h1>Blog Entries</h1>
 			{%endblock %}
-		</div>
+	</div> 
+
 		<div id="main_content">
 			{% block main_content %}{% endblock %}
 		</div>

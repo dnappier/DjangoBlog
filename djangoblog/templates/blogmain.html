@@ -3,10 +3,12 @@
 
 {% block title %}
 	<title>All Blog Entries</title>
-	<link rel="stylesheet" type="text/css" href='{% static "assets/css/default.css" %}' >
 {% endblock %}
 
 {% block main_content %}
+		<div id="image">
+			<img src='{% static "images/Bella1.jpg" %}'>
+		</div>
 		{% if posts.count > 0 %}
 			{% for post in posts reversed %}
 			<div id="post_listings">
@@ -25,6 +27,6 @@
 		
 		{% else %}
 			<p>There are no Blog entries</p >
-		{% endif %}
+		{% endif %} 
 {% endblock %}
 

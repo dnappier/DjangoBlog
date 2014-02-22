@@ -1,3 +1,3 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 	prompt("Welcome to the blog")
-});
+}); */
