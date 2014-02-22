@@ -1,0 +1,56 @@
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 35px;
+	color: #30307E;
+	text-align: center;
+	#padding-left: 50px;
+	margin: 15px;	
+}
+
+#image img{
+	width: 94%; 
+	height: 33%;
+}
+
+#page{
+	width: 100%;
+	height: 100%;
+}
+
+#sidebar{
+	width: 5%;
+	height: 1300px;
+	float: left;
+	background-color: #1E1EA1;
+	border: 3px solid #191970;
+}
+
+
+#header {
+	width: 94%;	
+	height: 75px;
+	background-color: white; 
+	border: 3px solid #191970;
+	border-radius: 10px;
+	margin-left: 5%;
+}
+
+#post_listings {
+	background-color:gray; 
+	width:1050px;
+	margin-left: 75px;
+	border-radius: 10px;
+}
+
+#summary_post_title {
+	margin: 15px;	
+	padding-left: 50px;
+}
+
+#summary_post_content {
+	padding-left: 20px;	
+	padding-bottom: 10px;
+}

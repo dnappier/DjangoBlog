@@ -1,0 +1,64 @@
+<html>
+<!DOCTYPE html>
+<head>
+	
+	<title>Doug Nappiers Blog</title>	
+	
+	<link rel="stylesheet" type="text/css" href="default.css" >
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="script.js"></script>
+	
+</head>
+
+<body>
+	<div id="page">
+        <div id="sidebar">
+            <a id="button_home" href="/blog/all/">  
+                <div id="home_button">
+                    <!-- <img src="home.png"> -->
+                </div>
+            </a> 
+		</div> 
+        
+		<div id="main_content">
+            <div id="header">
+                <h1>All Blog Entries</h1>
+	        </div> 
+            <!-- <div id="image">
+               <img src="Bella1.jpg">
+		    </div> -->
+            
+            <div class="left listings">
+				<div id=summary_post_title>
+					<h2>
+						<a href="/blog/posting{{ post.id }}" style="color:black">  
+							<strong>Title of Entry 1</strong>
+						</a>   
+					</h2>
+                </div>
+				<div id="summary_post_content">
+					<p>some text about this blog entry should go here with info, maybe a picture would be nice here if this works or doesn't or does not some text about this blog entry should go here with info, maybe a picture would be nice here if this works or doesn't or does not some text about this blog entry</p>
+				</div>
+			</div>
+			 		
+            <div class="right listings">
+                <div id="post_right">
+				<div id=summary_post_title>
+					<h2 >
+						<a href="/blog/posting{{ post.id }}" style="color:black">  
+							<strong>Title of Entry 2</strong>
+						</a>   
+					</h2>
+				</div>
+                </div>
+				<div id="summary_post_content">
+					<p>some text about this blog entry should go here with info, maybe a picture would be nice here some text about this blog entry should go here with info, maybe a picture would be nice here if this works or doesn't or does not </p>
+				</div>
+			</div>
+			 
+		</div><!-- end main_content -->
+		
+	
+	</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+	<title>{{ post.title }}</title>
+	<link rel="stylesheet" type="text/css" href='{% static "assets/css/default.css" %}' >
+{% endblock %}
+		
+{% block header %}
+		<h1>{{ post.title }}</h1>
+{% endblock %}
+		
+{% block main_content %}
+<div id="post_listings">
+	<p>{{ post.body|safe|linebreaks }}</p>
+	<br/>
+	<h4>Likes: {{post.likes}}</h4>
+</div>
+{% endblock %}

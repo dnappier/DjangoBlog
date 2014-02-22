@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+	<title>All Blog Entries</title>
+{% endblock %}
+
+{% block main_content %}
+		<div id="image">
+			<img src='{% static "images/Bella1.jpg" %}'>
+		</div>
+		{% if posts.count > 0 %}
+			{% for post in posts reversed %}
+			<div id="post_listings">
+				<div id=summary_post_title>
+					<h2 >
+						<a href="/blog/posting{{ post.id }}" style="color:black">  
+							<strong>{{ post.title }}</strong>
+						</a>   
+					</h2>
+					</div>
+				<div id="summary_post_content">
+					<p>{{ post.body|truncatewords:"80" }}</p>
+				</div>
+			</div>
+			{% endfor %}
+		
+		{% else %}
+			<p>There are no Blog entries</p >
+		{% endif %} 
+{% endblock %}
+
